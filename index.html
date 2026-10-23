@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="description" content="Проекты, обучение и библиотека знаний Анатолия Самосейко.">
+  <title>Anatassist — пространство идей</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    :root{color-scheme:light;--ink:#172b2b;--muted:#60706a;--paper:#f6f3ec;--card:#fffefa;--green:#155b4d;--lime:#d8f279;--line:#e8e5da;--serif:Georgia,'Times New Roman',serif}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.48 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:env(safe-area-inset-top) 18px calc(28px + env(safe-area-inset-bottom))}
+    main{max-width:520px;margin:auto}.top{display:flex;align-items:center;justify-content:space-between;padding:15px 2px 19px}.brand{font-size:14px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}.status{font-size:12px;color:var(--green);background:#e4ecd8;border-radius:99px;padding:7px 10px}
+    .hero{position:relative;overflow:hidden;border-radius:30px;background:var(--green);color:#fffefa;padding:26px 23px 24px;min-height:320px;box-shadow:0 18px 48px #174d3e20}.hero:after{content:"";position:absolute;width:240px;height:240px;border:1px solid #ffffff30;border-radius:50%;right:-107px;top:-83px;box-shadow:0 0 0 25px #ffffff0b,0 0 0 52px #ffffff08}.eyebrow{color:var(--lime);font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase}.hero h1{font:400 clamp(38px,12vw,55px)/.98 var(--serif);letter-spacing:-.045em;margin:17px 0 15px;max-width:320px}.hero p{color:#e4eee8;font-size:15px;max-width:310px;margin:0}.portrait{position:absolute;right:18px;bottom:18px;width:116px;height:116px;border:2px solid #39d6e5;border-radius:50%;overflow:hidden;background:#061a39;box-shadow:0 0 0 5px #ffffff18}.portrait img{position:absolute;width:172%;height:auto;max-width:none;left:-36%;top:-8%}.portrait-label{position:absolute;right:20px;bottom:3px;font-size:9px;color:#d8e8df}
+    .section-title{display:flex;justify-content:space-between;align-items:end;margin:29px 2px 13px}.section-title h2{font:400 25px/1.1 var(--serif);margin:0}.section-title span{font-size:12px;color:var(--muted)}.grid{display:grid;gap:10px}.tile{width:100%;text-align:left;border:1px solid var(--line);background:var(--card);border-radius:19px;padding:16px;display:flex;align-items:center;gap:14px;color:inherit;cursor:pointer;transition:transform .15s,border-color .15s}.tile:active{transform:scale(.985)}.icon{width:43px;height:43px;flex:0 0 43px;border-radius:14px;background:#edf1e6;display:grid;place-items:center;font-size:20px}.tile strong{display:block;font-size:15px}.tile small{display:block;color:var(--muted);font-size:12px;margin-top:3px}.arrow{margin-left:auto;color:var(--green);font-size:19px}.feature{margin-top:19px;padding:18px;border-radius:20px;background:#e9eddf}.feature small{display:block;color:var(--green);font-weight:750;letter-spacing:.08em;text-transform:uppercase;font-size:10px}.feature p{margin:8px 0 0;font:21px/1.18 var(--serif)}.footer{padding:23px 3px 0;text-align:center;color:var(--muted);font-size:11px}
+    dialog{width:min(92vw,480px);max-height:82vh;border:0;border-radius:25px;padding:24px;background:var(--card);color:var(--ink);box-shadow:0 25px 90px #102b2340}dialog::backdrop{background:#102b2380;backdrop-filter:blur(4px)}dialog h2{font:400 29px/1.08 var(--serif);margin:8px 0 12px}dialog p{color:var(--muted);white-space:pre-line}.close{width:100%;border:0;border-radius:14px;padding:13px;background:var(--green);color:white;font:inherit;font-weight:700;margin-top:10px}.tag{font-size:11px;color:var(--green);font-weight:750;text-transform:uppercase;letter-spacing:.08em}
+    @media(min-width:480px){body{padding-top:22px}.hero{min-height:340px;padding:31px}}
+  </style>
+</head>
+<body>
+  <main>
+    <header class="top"><div class="brand">ANATASSIST</div><div class="status">пространство идей</div></header>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="eyebrow">Исследуйте · учитесь · создавайте</div>
+      <h1 id="hero-title">Идеи, которые становятся делом</h1>
+      <p>Добро пожаловать в пространство проектов и знаний Анатолия Самосейко.</p>
+      <div class="portrait"><img src="assets/anatoly-avatar.jpg" alt="Мультяшный портрет Анатолия Самосейко"></div>
+    </section>
+    <section aria-labelledby="sections-title">
+      <div class="section-title"><h2 id="sections-title">С чего начнём?</h2><span>4 раздела</span></div>
+      <div class="grid">
+        <button class="tile" data-open="projects"><span class="icon">⌁</span><span><strong>Проекты</strong><small>Идеи и направления работы</small></span><span class="arrow">↗</span></button>
+        <button class="tile" data-open="learning"><span class="icon">✳</span><span><strong>Обучение</strong><small>Разбирайтесь шаг за шагом</small></span><span class="arrow">↗</span></button>
+        <button class="tile" data-open="library"><span class="icon">▤</span><span><strong>Библиотека знаний</strong><small>Материалы и полезные заметки</small></span><span class="arrow">↗</span></button>
+        <button class="tile" data-open="about"><span class="icon">◎</span><span><strong>Знакомство</strong><small>Об авторе и его подходе</small></span><span class="arrow">↗</span></button>
+      </div>
+    </section>
+    <aside class="feature"><small>Навигация без спешки</small><p>Выберите тему — и начните с главного.</p></aside>
+    <footer class="footer">Материалы наполняются автором проекта.<br>ANATASSIST · 2026</footer>
+  </main>
+  <dialog id="section-dialog"><div class="tag" id="dialog-tag">ANATASSIST</div><h2 id="dialog-title"></h2><p id="dialog-copy"></p><button class="close" id="dialog-close">Понятно</button></dialog>
+  <script>
+    const app = window.Telegram?.WebApp;
+    app?.ready(); app?.expand();
+    const copy = {
+      projects: ["Проекты", "Здесь появятся направления и проекты Анатолия — с короткими описаниями, ссылками и понятным маршрутом для знакомства. Материалы добавит автор."],
+      learning: ["Обучение", "В этом разделе будут учебные программы, уроки и практические задания. Содержание и порядок обучения добавит автор."],
+      library: ["Библиотека знаний", "Здесь соберутся полезные материалы, инструкции и ответы на частые вопросы. Библиотека пока готовится."],
+      about: ["Знакомство", "Этот раздел расскажет об Анатолии Самосейко, его опыте и подходе. Проверенную биографию и ссылки добавит автор."]
+    };
+    const dialog = document.querySelector("#section-dialog");
+    document.querySelectorAll("[data-open]").forEach(button => button.addEventListener("click", () => {
+      const [title, text] = copy[button.dataset.open];
+      document.querySelector("#dialog-title").textContent = title;
+      document.querySelector("#dialog-copy").textContent = text;
+      dialog.showModal();
+      app?.HapticFeedback?.impactOccurred("light");
+    }));
+    document.querySelector("#dialog-close").addEventListener("click", () => dialog.close());
+    dialog.addEventListener("click", event => { if (event.target === dialog) dialog.close(); });
+  </script>
+</body>
+</html>
+
